@@ -1,3 +1,15 @@
-function onClick(){
-    window.location.href = 'https://drive.google.com/drive/u/0/folders/1_CBMfrl1VhPMnB0VjQ4BPq3B6MZiSKzD'
+function animar(){
+    const btn = document.getElementById('btn-menuu') 
+    btn.classList.toggle('ativar')
+}
+
+
+const menuDiv = document.getElementById('menu-mobile')
+const btnAnimar = document.getElementById('btn-menuu')
+
+menuDiv.addEventListener('click', animarMenu)
+    
+function animarMenu(){
+    menuDiv.classList.toggle('abrir')
+    btnAnimar.classList.toggle('ativado')
 }
