@@ -564,7 +564,7 @@ footer .line-footer i{
 
 
 /* Adaptações gerais para dispositivos móveis */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1100px) {
     *{
         max-width: 100vw;
     }
