@@ -10,6 +10,6 @@ const btnAnimar = document.getElementById('btn-menuu')
 menuDiv.addEventListener('click', animarMenu)
     
 function animarMenu(){
-    menuDiv.classList.toggle('abrir')
+    menuDiv.classList.toggle('abrirr')
     btnAnimar.classList.toggle('ativado')
 }
