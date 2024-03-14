@@ -612,7 +612,7 @@ footer{
 }
 
 footer .flex{
-    gap: 38rem;
+    gap: 42vw;
 }
 
 footer .line-footer{
@@ -886,13 +886,11 @@ footer .line-footer i{
             margin: 0px 0.1vh;
         }
 
-        /*.flex{
+        .flex{
             gap: 8rem;
-        }*/
-
-        .icones2{
-            right: 0 !important;
         }
+
+     
 
         #bitbut i{
             font-size: 4vw;
