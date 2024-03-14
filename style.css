@@ -13,10 +13,10 @@ html{
 
 /*BOTÃO DO MENU*/
 #btn-menuu{
-    width: 7vw;
-    height: 5vh;
+    width: 2rem;
+    height: 2rem;
     border: 0.1vw solid rgb(255, 255, 255);
-    border-radius: 2vw;
+    border-radius: .5rem;
     background: transparent;
     cursor: pointer;
     transition: .5s;
@@ -30,12 +30,12 @@ html{
 }
 
 #btn-menuu.ativar .linha:nth-child(1){
-    transform: translateY(.8vh) rotate(-45deg);
+    transform: translateY(.35rem) rotate(-45deg);
     background-color: red;
 }
 
 #btn-menuu.ativar .linha:nth-child(3){
-    transform: translateY(-.8vh) rotate(45deg);
+    transform: translateY(-.35rem) rotate(45deg);
     background-color: red;
 }
 
@@ -53,6 +53,34 @@ html{
     transform-origin: center;
     transition: .3s;
 }
+
+/*CABECALHO MOBILE*/
+.menu-mobile{
+    background-color: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    left: 0;
+    top: 7.5vh;
+    width: 100%;
+    height: 0vh;
+    backdrop-filter: blur(1vw);
+    visibility: hidden;
+    transition: .5s;
+    overflow: hidden;
+
+    a{
+        text-decoration: none;
+        display: block;
+        padding: 5vh 6.4vw;
+        font-size: 4vw;
+        transition: .2s;
+    }
+
+    a:hover{
+        background-color: rgba(1, 175, 1, 0.267);
+        transform: scale(1.02);
+    }
+}
+
 
 /*Botão topo da pagina*/
 #bitbut i{
@@ -128,32 +156,7 @@ h2.title span {
 }
 
 
-/*CABECALHO MOBILE*/
-.menu-mobile{
-    background-color: rgba(0, 0, 0, 0.466);
-    position: absolute;
-    left: 0;
-    top: 7.5vh;
-    width: 100%;
-    height: 0vh;
-    backdrop-filter: blur(1vw);
-    visibility: hidden;
-    transition: .5s;
-    overflow: hidden;
 
-    a{
-        text-decoration: none;
-        display: block;
-        padding: 5vh 6.4vw;
-        font-size: 4vw;
-        transition: .2s;
-    }
-
-    a:hover{
-        background-color: rgba(1, 175, 1, 0.267);
-        transform: scale(1.02);
-    }
-}
 
 
 
@@ -646,7 +649,7 @@ footer .line-footer i{
         display: block !important;
     }
 
-    .menu-mobile.abrir{
+    .menu-mobile.abrirr{
         visibility: visible;
         height: 100vh;
     }
@@ -690,12 +693,9 @@ footer .line-footer i{
         }
 
         .title {
-            font-size: 3vw;
+            font-size: 3.2vw;
         }
     }
-
-    
-
 
 /*TOPO DO SITE*/
 
@@ -705,30 +705,31 @@ footer .line-footer i{
 
         .flex {
             display: grid;
-            align-content: center;
         }
 
         #titulo{
-            font-size: 3vw !important;
-            line-height: 3vh;
-          
+            font-size: 3.8vw !important;
+            line-height: 2.6vh;
         }
 
         #description {
-            font-size: 2.9vw !important;
+            font-size: 3.4vw !important;
             max-width: 90vw;
             text-align: justify;
             align-items: center;
             padding: 0 5%;
-            line-height: 3.2vh;
+            line-height: 2.8vh;
         }
 
         #button2{
             margin-left: 33vw;
+            order: 2;
+            display: none;
         }
 
-        img{
-            width: 40vw !important;
+        .imgSite img{
+            width: 50vw !important;
+            order: 1;
         }
     }
 
@@ -748,7 +749,7 @@ footer .line-footer i{
 
         .especialidadesBox p{
             font-size: 2.9vw !important;
-            line-height: 3.2vh;
+            line-height: 2.8vh;
         }
 
         .especialidadesBox h3{
@@ -760,17 +761,18 @@ footer .line-footer i{
             font-size: 8vw !important;
         }
 
-        .flex > div{
+        /*.flex > div{
             flex: 1 1 30vw;
             margin: 1vw auto;
-        }
+        }*/
         
         .especialidadesBox{
             padding: 3vw;
+            margin: 2.5vh 0;
             border-radius: 4vw;
             transition: 0.5s;
             min-width: 70vw;
-            min-height: 50vh;
+            min-height: 40vh;
         }
     }
 
@@ -786,8 +788,7 @@ footer .line-footer i{
         }
 
         .imgsobre img{
-            
-            width: 45vw !important;
+            width: 55vw !important;
         }
 
         .sobre{
@@ -798,11 +799,13 @@ footer .line-footer i{
 
         p{
             font-size: 2.9vw !important;
-            line-height: 3.2vh;
+            line-height: 2.8vh;
         }
 
         h2{
-            font-size: 4.3vw !important;
+            font-size: 4.7vw !important;
+            line-height: 2vh;
+            margin-bottom: -2vh;
         }
 
     }
@@ -878,8 +881,8 @@ footer .line-footer i{
 
     footer{
         .icones2 button{
-            width: 6vw;
-            height: 4vh;
+            width: 1.75rem;
+            height: 1.75rem;
             font-size: 2.2vw;
             margin: 0px 0.1vh;
         }
