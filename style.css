@@ -886,8 +886,12 @@ footer .line-footer i{
             margin: 0px 0.1vh;
         }
 
-        .flex{
-            gap: 30vw;
+        /*.flex{
+            gap: 8rem;
+        }*/
+
+        .icones2{
+            right: 0 !important;
         }
 
         #bitbut i{
