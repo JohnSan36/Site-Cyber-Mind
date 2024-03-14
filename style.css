@@ -441,8 +441,8 @@ section.apresentacao .flex{
 }
 
 .icones button{
-    width: 4.5vw;
-    height: 9vh;
+    width: 2rem;
+    height: 2rem;
     border-radius: 100%;
     border: 0;
     background-color: rgb(1, 175, 1);
@@ -612,7 +612,7 @@ footer{
 }
 
 footer .flex{
-    gap: 43.5vw;
+    gap: 5rem;
 }
 
 footer .line-footer{
@@ -744,7 +744,6 @@ footer .line-footer i{
 
         #title2{
             font-size: 3.0vh;
-            margin-bottom: 10vh;
         }
 
         .especialidadesBox p{
@@ -930,7 +929,7 @@ footer .line-footer i{
     }
 
     h3 {
-        margin: 5vh;
+        margin: 5vh 0;
         font-size: 1.5vw;
     }
 
